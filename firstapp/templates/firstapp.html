@@ -1,0 +1,17 @@
+{% extends "base.html" %} 
+{% load crispy_forms_tags %} 
+
+
+{% block title%}
+Birth Cirtificate
+{% endblock %}
+
+{% block content %}
+<h1 class="text-center "><b>Birth Cirtificate</b></h1>
+
+    <form method="post" class="w-50 m-auto ">
+        {% csrf_token %}
+        {{ form | crispy }}
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}

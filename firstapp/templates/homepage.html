@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block  title %}
+HOME page
+{% endblock  %}
+
+
+{% block content %}
+
+<h1>This is the home page  of Practice day 1</h1>
+<div class="text-center align-items-center m-auto">
+
+<div class="border-2px justify-content-center w-50 m-auto " style="border: 5px solid black; gap:auto">
+    <h2>This part is for the   <a href="https://ordinarycoders.com/blog/article/using-django-form-fields-and-widgets"> first link of</a> practice day 1 </h2>
+    <p>i made a Birth cirtificate form This</p>
+    <a href="{%url 'firstapp' %}"><button class="btn btn-primary">Birth cirtificate</button></a>
+    
+</div>
+
+<div class="border-2px justify-content-center w-50 m-auto" style="border: 5px solid black; gap: 20px;">
+    <h2>This part is for the   <a href="https://ordinarycoders.com/blog/article/using-django-form-fields-and-widgets"> second link of</a> practice day 1 </h2>
+    <p>i made a resume builder  form This</p>
+    <a href="{%url 'secondapp' %}"><button class="btn btn-primary">Resume</button></a>
+    
+</div>
+
+<div class="border-2px justify-content-center w-50 m-auto" style="border: 5px solid black; ">
+    <h2>This part is for the   <a href="https://ordinarycoders.com/blog/article/using-django-form-fields-and-widgets"> third link of</a> practice day 1 </h2>
+    <p>i made a Model cirtificate form This</p>
+    <a href="{%url 'thirdapp' %}"><button class="btn btn-primary">MOdel</button></a>
+    
+</div>
+</div>
+
+
+{% endblock %}

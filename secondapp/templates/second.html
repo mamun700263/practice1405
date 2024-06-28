@@ -1,0 +1,39 @@
+{% extends "base.html" %} 
+{% load crispy_forms_tags %} 
+
+
+{% block title%}
+Resume Maker
+{% endblock %}
+
+{% block content %}
+<h1 class="text-center "><b>Resume Maker</b></h1>
+
+    <form method="post" class="w-50 m-auto ">
+        {% csrf_token %}
+        <h5>using crispy</h5>
+        {{ form | crispy }}
+        <button type="submit">Submit</button>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <h5>using as_p</h5>
+        {{ form.as_p}}
+        
+        <h5>using as_table</h5>
+        {{ form.as_table  }}
+        
+        <h5>using as_ul</h5>
+        {{ form.as_ul  }}
+        
+    </form>
+{% endblock %}
